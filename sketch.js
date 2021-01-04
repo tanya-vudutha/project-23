@@ -46,7 +46,7 @@ function setup() {
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
  	World.add(world, ground);
 
-	redBox1 = new RedBox(400,650,200,20);
+	redBox1 = new RedBox(400,630,200,19);
 	redBox2 = new RedBox(300,610,20,100);
 	redBox3 = new RedBox(500,610,20,100);
 
@@ -60,11 +60,12 @@ function draw() {
   background(0);
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
-  drawSprites();
-
+	
   redBox1.display();
   redBox2.display();
   redBox3.display();
+	
+  drawSprites();
  
 }
 
