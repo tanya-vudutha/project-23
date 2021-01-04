@@ -43,10 +43,10 @@ function setup() {
 	
 
 	//Create a Ground
-	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
+	ground = Bodies.rectangle(width/2, 630, width, 19 , {isStatic:true} );
  	World.add(world, ground);
 
-	redBox1 = new RedBox(400,630,200,19);
+	redBox1 = new RedBox(400,650,200,20);
 	redBox2 = new RedBox(300,610,20,100);
 	redBox3 = new RedBox(500,610,20,100);
 
